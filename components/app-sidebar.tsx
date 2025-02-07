@@ -2,20 +2,17 @@
 
 import * as React from "react"
 import {
-  BookOpen,
   Bot,
   Command,
-  Frame,
+  DollarSign,
   LifeBuoy,
-  Map,
-  PieChart,
+  PartyPopper,
   Send,
   Settings2,
-  SquareTerminal,
+  Wallet,
 } from "lucide-react"
 
 import { NavMain } from "@/components/nav-main"
-import { NavProjects } from "@/components/nav-projects"
 import { NavSecondary } from "@/components/nav-secondary"
 import { NavUser } from "@/components/nav-user"
 import {
@@ -38,7 +35,7 @@ const data = {
     {
       title: "Carteira",
       url: "#",
-      icon: SquareTerminal,
+      icon: Wallet,
       isActive: true,
       items: [
         {
@@ -54,7 +51,7 @@ const data = {
     {
       title: "Monetização",
       url: "#",
-      icon: Bot,
+      icon: DollarSign,
       items: [
         {
           title: "Mensagens",
@@ -70,7 +67,11 @@ const data = {
         },
       ],
     },
-
+    {
+      title: "Alertas",
+      url: "#",
+      icon: PartyPopper,
+    },
     {
       title: "Configurações",
       url: "#",
@@ -97,7 +98,7 @@ const data = {
   ],
   navSecondary: [
     {
-      title: "Support",
+      title: "Suporte",
       url: "#",
       icon: LifeBuoy,
     },
